@@ -1,0 +1,16 @@
+{
+  "name": "uae",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "node-sass": "^4.5.1",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/scss/main.scss styles/css/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

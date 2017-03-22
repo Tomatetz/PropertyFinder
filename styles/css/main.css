@@ -1,0 +1,79 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #dfdfdf; }
+
+.carousel-wrapper {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  top: 50px;
+  background-color: #fff; }
+  .carousel-wrapper .nav {
+    position: absolute;
+    height: 100%;
+    width: 35px;
+    background-color: #999;
+    top: 0;
+    opacity: 0.2;
+    cursor: pointer; }
+    .carousel-wrapper .nav:after {
+      position: absolute;
+      top: 192px;
+      text-align: center;
+      width: 100%;
+      font-size: 16px; }
+    .carousel-wrapper .nav:hover {
+      opacity: 0.5; }
+    .carousel-wrapper .nav.prev {
+      left: 0; }
+      .carousel-wrapper .nav.prev:after {
+        content: "❮"; }
+    .carousel-wrapper .nav.next {
+      right: 0; }
+      .carousel-wrapper .nav.next:after {
+        content: "❯"; }
+  .carousel-wrapper .carousel {
+    list-style-type: none; }
+    .carousel-wrapper .carousel .slide {
+      color: #333;
+      font-family: sans-serif, arial, 'Times New Roman';
+      float: left;
+      width: 600px;
+      height: 400px;
+      -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+      position: relative;
+      display: inline; }
+      .carousel-wrapper .carousel .slide .slide-inner {
+        padding: 20px 50px; }
+        .carousel-wrapper .carousel .slide .slide-inner .logo {
+          border-radius: 50%;
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          opacity: 0.8;
+          right: 50px;
+          top: 20px;
+          transition: all 0.2s ease-out;
+          border: 1px dashed #333; }
+          .carousel-wrapper .carousel .slide .slide-inner .logo:hover {
+            border-radius: 0; }
+        .carousel-wrapper .carousel .slide .slide-inner .slide-additional {
+          position: absolute;
+          top: 70px;
+          font-size: 12px; }
+        .carousel-wrapper .carousel .slide .slide-inner .slide-description {
+          text-align: center;
+          color: #7a7a7a;
+          margin-top: 100px;
+          max-height: 240px;
+          overflow-y: scroll;
+          text-align: justify;
+          font-size: 12px; }
